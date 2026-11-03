@@ -1,0 +1,97 @@
+# Zähllied rückwärts und wieder vorwärts: pro Strophe fliegt ein Nachtlicht zum Mond.
+# Silben mit Bindestrich trennen. Die Zählmechanik steuert "anzahl" pro Abschnitt.
+
+titel: Fünf kleine Nachtlichter
+untertitel: Ein Zähllied zum Mitsingen
+lehrplan: "MA.1 Zahl und Variable – rückwärts und vorwärts zählen bis 5 (Zyklus 1)"
+beschreibung: |
+  Fünf kleine Nachtlichter tanzen ums Haus – und eines nach dem anderen fliegt zum Mond.
+  Zählt mit! Wie viele sind noch da?
+
+musik:
+  bpm: 104
+  tonart: C
+  seed: 3
+
+# audio: gesang.wav             # eigene Aufnahme -> ersetzt die Platzhaltermusik
+# timing: labels:gesang.txt      # Audacity-Textmarken, eine pro Zeile (sonst: auto)
+
+szene: nacht
+intro_takte: 2
+zwischenspiel_takte: 1
+outro_takte: 2
+
+figuren:
+  - {name: Lumi, farbe: "#FFD666", accessoire: flamme}
+  - {name: Mo,   farbe: "#80E6C4", accessoire: flamme, groesse: 1.1}
+  - {name: Pip,  farbe: "#FF96BE", accessoire: ohren, groesse: 0.9}
+  - {name: Bo,   farbe: "#9DB8FF", accessoire: flamme}
+  - {name: Kiki, farbe: "#FFB36B", accessoire: ohren, groesse: 0.85}
+
+abschnitte:
+  - typ: strophe
+    anzahl: 5
+    zeilen:
+      - "Fünf klei-ne Nacht-lich-ter"
+      - "tan-zen um das Haus."
+      - "Ei-nes winkt: Gu-te Nacht!"
+      - "und fliegt zum Mond hin-aus."
+
+  - typ: strophe
+    anzahl: 4
+    choreo: reihe
+    zeilen:
+      - "Vier klei-ne Nacht-lich-ter"
+      - "tan-zen um das Haus."
+      - "Ei-nes winkt: Gu-te Nacht!"
+      - "und fliegt zum Mond hin-aus."
+
+  - typ: refrain
+    anzahl: 3
+    zeilen:
+      - "Eins, zwei, drei, wir zäh-len mit,"
+      - "wir zäh-len in der Nacht,"
+      - "die Ster-ne schau-en zu,"
+      - "der Mond, der lacht und lacht."
+
+  - typ: strophe
+    anzahl: 3
+    choreo: kreis
+    zeilen:
+      - "Drei klei-ne Nacht-lich-ter"
+      - "tan-zen um das Haus."
+      - "Ei-nes winkt: Gu-te Nacht!"
+      - "und fliegt zum Mond hin-aus."
+
+  - typ: strophe
+    anzahl: 2
+    zeilen:
+      - "Zwei klei-ne Nacht-lich-ter"
+      - "tan-zen um das Haus."
+      - "Ei-nes winkt: Gu-te Nacht!"
+      - "und fliegt zum Mond hin-aus."
+
+  - typ: strophe
+    anzahl: 1
+    choreo: tanzen
+    zeilen:
+      - "Ein klei-nes Nacht-licht"
+      - "tanzt al-lein ums Haus."
+      - "Es winkt und sagt: Gu-te Nacht!"
+      - "und fliegt zum Mond hin-aus."
+
+  - typ: bridge
+    anzahl: 0
+    effekte: [gluehwuermchen, funkeln]
+    zeilen:
+      - "Kei-ne Nacht-lich-ter mehr,"
+      - "nur Mond und Ster-nen-schein."
+
+  - typ: refrain
+    anzahl: 5
+    choreo: tanzen
+    zeilen:
+      - "Doch mor-gen, wenn es dun-kel wird,"
+      - "sind al-le wie-der da:"
+      - "eins, zwei, drei, vier, fünf –"
+      - "hur-ra, hur-ra, hur-ra!"

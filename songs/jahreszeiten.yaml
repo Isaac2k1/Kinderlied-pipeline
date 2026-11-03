@@ -1,0 +1,76 @@
+# Jahreszeitenlied: jede Strophe hat ihre eigene Szene, der Refrain dreht sich im Kreis.
+
+titel: Vier Jahreszeiten
+untertitel: Frühling, Sommer, Herbst und Winter
+lehrplan: "NMG – Jahreszeiten und Veränderungen in der Natur beobachten (Zyklus 1)"
+beschreibung: |
+  Ein Lied durch das ganze Jahr: Blumen im Frühling, Eis im Sommer,
+  Blätter im Herbst und Schnee im Winter.
+
+musik:
+  bpm: 112
+  tonart: F
+  seed: 8
+
+intro_takte: 2
+zwischenspiel_takte: 1
+
+figuren:
+  - {name: Fili, farbe: "#A6E36B", accessoire: blatt}
+  - {name: Sunny, farbe: "#FFD666", accessoire: keine, groesse: 1.1}
+  - {name: Flocke, farbe: "#9DB8FF", accessoire: muetze}
+
+abschnitte:
+  - typ: strophe
+    szene: tag
+    zeilen:
+      - "Im Früh-ling wach-sen Blu-men,"
+      - "die Vö-gel sin-gen hell,"
+      - "die Son-ne wärmt die Wie-se,"
+      - "und al-les wächst ganz schnell."
+
+  - typ: strophe
+    szene: tag
+    choreo: reihe
+    effekte: [funkeln, konfetti]
+    zeilen:
+      - "Im Som-mer ist es heiss,"
+      - "wir schle-cken gern ein Eis,"
+      - "wir ba-den in dem See"
+      - "und tan-zen auf dem Klee."
+
+  - typ: refrain
+    szene: tag
+    choreo: kreis
+    zeilen:
+      - "Früh-ling, Som-mer, Herbst und Win-ter,"
+      - "vier Jah-res-zei-ten hat das Jahr,"
+      - "dreh dich, Kreis, und dreh dich wei-ter,"
+      - "je-de ist ganz wun-der-bar!"
+
+  - typ: strophe
+    szene: herbst
+    zeilen:
+      - "Im Herbst, da fal-len Blät-ter,"
+      - "rot, gelb und braun ins Gras,"
+      - "der Wind bläst durch die Bäu-me,"
+      - "das Ra-scheln macht uns Spass."
+
+  - typ: strophe
+    szene: winter
+    choreo: tanzen
+    zeilen:
+      - "Im Win-ter fällt der Schnee,"
+      - "es friert der gros-se See,"
+      - "wir bau-en ei-nen Schnee-mann"
+      - "mit Müt-ze und mit Schal."
+
+  - typ: refrain
+    szene: winter
+    choreo: kreis
+    effekte: [schnee, konfetti]
+    zeilen:
+      - "Früh-ling, Som-mer, Herbst und Win-ter,"
+      - "vier Jah-res-zei-ten hat das Jahr,"
+      - "dreh dich, Kreis, und dreh dich wei-ter,"
+      - "je-de ist ganz wun-der-bar!"
